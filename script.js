@@ -48,7 +48,7 @@
                 playerScore++;
                 userScore.textContent = roundNum++;
                 score.textContent = 'you won ';
-                playScore.textContent = playerScore;
+                playScore.textContent = playerScore + ' points';
 
                 if (playerScore >= 3){
                     rockButton.removeEventListener("click", playRound);
@@ -64,7 +64,7 @@
                 {    
                 computerScore++;
                 userScore.textContent = roundNum++;
-                compScore.textContent = computerScore;
+                compScore.textContent = computerScore + ' points';
                 
                 score.textContent = 'you lose';
                 if (computerScore>= 3){
